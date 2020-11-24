@@ -1,18 +1,18 @@
-	<div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-			{% for category in site.categories %}
-			  <h3>{{ category[0] }}</h3>
-			  <ul class="list-group">
-				{% for post in category[1] %}
-				  <li class="list-group-item">
-					<span style="font-size:10pt">{{post.date|date:"%F"}}</span><br>
-					<a href="{{ post.url }}" style="color:#343a40">{{ post.title }}</a>
-				  </li>
-				{% endfor %}
-			  </ul>
-			{% endfor %}
-        </div>
-      </div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+    {% for category in site.categories %}
+      <h3>{{ category[0] }}</h3>
+      <ul class="list-group">
+      {% for post in category[1] %}
+        <li class="list-group-item">
+        <span style="font-size:10pt">{{post.date|date:"%F"}}</span><br>
+        <a href="{{ post.url }}" style="color:#343a40">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+      </ul>
+    {% endfor %}
     </div>
-                   
+  </div>
+</div>
+                  
