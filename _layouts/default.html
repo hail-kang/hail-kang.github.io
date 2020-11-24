@@ -26,9 +26,13 @@
 	  </head>
   <body>
 	  {% include header.html %}
-	  {{ content }}
-      <!-- <section id="about">
-      </section> -->
+	  <div class="container-fluid">
+		  <div class="row">
+			  <div class="col-md-8 col-md-offset-2 col-xs-11">
+				  {{ content }}
+			  </div>
+		  </div>
+	  </div>
       {% include footer.html %}
   </body>
 </html>
